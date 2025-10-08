@@ -1,4 +1,4 @@
-module chat_server
+module github.com/maximpontryagin/chat-server
 
 go 1.18
 

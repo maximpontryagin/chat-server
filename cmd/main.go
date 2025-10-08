@@ -1,7 +1,7 @@
 package main
 
 import (
-	desc "github.com/maximpontryagin/auth/pkg/auth_v1"
+	desc "github.com/maximpontryagin/chat-server/pkg/chat_server_v1"
 )
 
 const grpcPort = 50060
