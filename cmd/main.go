@@ -12,7 +12,7 @@ import (
 	"google.golang.org/grpc/reflection"
 )
 
-const grpcPort = 50060
+const grpcPort = 50061
 
 type server struct {
 	desc.UnimplementedChat_ServerV1Server
@@ -23,7 +23,9 @@ func (s *server) Create(context.Context, *desc.CreateRequest) (*desc.CreateRespo
 }
 
 func (s *server) Delete(context.Context, *desc.DeleteRequest) (*empty.Empty, error) {
-	return nil, nil
+	// Проверяем как куб заново поднимает наш под
+	panic("Сервис помер")
+	// return nil, nil
 }
 
 func (s *server) SendMessage(context.Context, *desc.SendRequest) (*empty.Empty, error) {
